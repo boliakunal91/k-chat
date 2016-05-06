@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#64B5F6">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:text="Not Connected"
+            android:id="@+id/mTitle" />
+
+    </LinearLayout>
+
+
+    <VideoView
+        android:id="@+id/video_view"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_text_out"
+            android:layout_width="0dp"
+            android:layout_weight="99"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:enabled="false"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_send_audio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send_audio_button" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnStart"
+            android:text="Start"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/btnStop"
+            android:text="STOP"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/play_audio_btn"
+            android:text="PLAY"
+            android:layout_height="fill_parent" />
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnFormat"
+            android:text="Format (mp4)"
+            android:enabled="false"
+            android:layout_weight="1.0"/>
+        -->
+    </LinearLayout>
+</LinearLayout>

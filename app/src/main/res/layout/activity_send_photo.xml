@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#64B5F6">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="30dp"
+            android:text="Not Connected"
+            android:id="@+id/mTitle" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/chat"
+        />
+    <ListView
+        android:id="@+id/in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edit_text_out"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="99" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:enabled="false"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button_send_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/send_photo" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectPhotoButton"
+        android:text="Select Picture"  />
+</LinearLayout>
+</LinearLayout>
